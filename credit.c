@@ -41,15 +41,17 @@ int main(void)
         //check for valid card number
         if (valid)
         {
-
+            //check if card is visa
             if ((n >= 4e12 && n < 5e12) || (n >= 4e15 && n < 5e15))
             {
                 printf("VISA");
             }
+            //check for mastercard
             else if (n >= 51e14 && n < 56e14)
             {
                 printf("MASTERCARD\n");
             }
+            //check for AMEX
             else if ((n >= 34e13 && n < 35e13) || (n >= 37e13 && n < 38e13))
             {
                 printf("AMEX\n");
