@@ -19,3 +19,17 @@ int main(void)
 
 }
 
+int length(long n)
+{
+    int i;
+    for(i=0;n!=0;i++,n/=10);
+    return i;
+
+}
+
+bool valid_length(int n)
+{
+    return (n > 12 && n < 17);
+}
+
+
